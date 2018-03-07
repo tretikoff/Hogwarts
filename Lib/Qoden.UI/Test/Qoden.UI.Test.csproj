@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <DebugType>portable</DebugType>
+    <AssemblyName>Qoden.Binding.Test</AssemblyName>
+    <PackageId>Qoden.Binding.Test</PackageId>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50;portable-net45+win8</PackageTargetFallback>
+    <RuntimeFrameworkVersion>1.1.1</RuntimeFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Binding/Qoden.Binding.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
+    <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Shared\Layout\ILayoutBox.cs">
+      <Link>src\Layout\ILayoutBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\ILayoutable.cs">
+      <Link>src\Layout\ILayoutable.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\IViewLayoutBox.cs">
+      <Link>src\Layout\IViewLayoutBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\LayoutBox.cs">
+      <Link>src\Layout\LayoutBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\LayoutBoxCenter.cs">
+      <Link>src\Layout\LayoutBoxCenter.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\LayoutBoxFrame.cs">
+      <Link>src\Layout\LayoutBoxFrame.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\LayoutBoxLTRBWH.cs">
+      <Link>src\Layout\LayoutBoxLTRBWH.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\LayoutBoxMinMax.cs">
+      <Link>src\Layout\LayoutBoxMinMax.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\LayoutBoxRelative.cs">
+      <Link>src\Layout\LayoutBoxRelative.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\LayoutBuilder.cs">
+      <Link>src\Layout\LayoutBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\LayoutBuilderDistribute.cs">
+      <Link>src\Layout\LayoutBuilderDistribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\LinearLayoutBuilder.cs">
+      <Link>src\Layout\LinearLayoutBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\Units.cs">
+      <Link>src\Layout\Units.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\ViewLayoutBox.cs">
+      <Link>src\Layout\ViewLayoutBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\ViewLayoutUtil.cs">
+      <Link>src\Layout\ViewLayoutUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Layout\ViewSizing.cs">
+      <Link>src\Layout\ViewSizing.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Primitives\ColorFromString.cs">
+      <Link>src\Primitives\ColorFromString.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Primitives\EdgeInsets.cs">
+      <Link>src\Primitives\EdgeInsets.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Primitives\Font.cs">
+      <Link>src\Primitives\Font.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Primitives\Matrix2d.cs">
+      <Link>src\Primitives\Matrix2d.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Primitives\RGB.cs">
+      <Link>src\Primitives\RGB.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Primitives\TextAlignment.cs">
+      <Link>src\Primitives\TextAlignment.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>

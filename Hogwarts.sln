@@ -1,0 +1,100 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Droid", "Droid\Droid.csproj", "{B5A3E9A5-B6DE-4475-9B7F-71A2C39DE074}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{896D03DE-DC86-4935-BEEC-37D72D2323D3}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared", "Shared\Shared.shproj", "{ECBE11DE-829C-4190-8C0B-49B5EDD74EEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{37FF03DB-0A12-4892-8E8F-D37C0FE8A9DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Qoden.UI", "Qoden.UI", "{4FEF6671-C625-40DE-BB38-6468A5903C9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qoden.UI.Android", "Lib\Qoden.UI\Droid\Qoden.UI.Android.csproj", "{E13D3879-B962-4072-9908-F548A87E9473}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qoden.UI.Test", "Lib\Qoden.UI\Test\Qoden.UI.Test.csproj", "{4ED82195-C5A5-44D1-948D-5B513DDF9179}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qoden.Binding", "Lib\Qoden.UI\Binding\Qoden.Binding.csproj", "{275AD67F-E85A-4BA9-AD48-08247E5E06DC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Qoden.UI.Shared", "Lib\Qoden.UI\Shared\Qoden.UI.Shared.shproj", "{D5300C65-55EE-4881-90C3-E58F21190F75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Qoden.Auth", "Qoden.Auth", "{1902C84F-63A5-40F6-8E06-05695B4292AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qoden.Auth.Test", "Lib\Qoden.Auth\Test\Qoden.Auth.Test.csproj", "{F0AF883E-518E-4FE0-8F08-B6F7CF17C48A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qoden.Auth.Droid", "Lib\Qoden.Auth\Droid\Qoden.Auth.Droid.csproj", "{6883062D-DCB0-498B-8525-C0E1B0BB5710}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{512005DB-3290-41C0-B410-D3F0E5114F8C}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Qoden.Auth\Common.props = Lib\Qoden.Auth\Common.props
+		Lib\Qoden.Auth\Qoden.Auth.sln = Lib\Qoden.Auth\Qoden.Auth.sln
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qoden.Auth", "Lib\Qoden.Auth\Auth\Qoden.Auth.csproj", "{A56F1291-3B40-46C9-923F-1725F462A15C}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Lib\Qoden.UI\Shared\Qoden.UI.Shared.projitems*{d5300c65-55ee-4881-90c3-e58f21190f75}*SharedItemsImports = 13
+		Lib\Qoden.UI\Shared\Qoden.UI.Shared.projitems*{e13d3879-b962-4072-9908-f548a87e9473}*SharedItemsImports = 4
+		Shared\Shared.projitems*{ecbe11de-829c-4190-8c0b-49b5edd74eef}*SharedItemsImports = 13
+		Lib\Qoden.UI\Shared\Qoden.UI.Shared.projitems*{ffe30417-bb9d-4669-9be8-3866380be603}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5A3E9A5-B6DE-4475-9B7F-71A2C39DE074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A3E9A5-B6DE-4475-9B7F-71A2C39DE074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A3E9A5-B6DE-4475-9B7F-71A2C39DE074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A3E9A5-B6DE-4475-9B7F-71A2C39DE074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896D03DE-DC86-4935-BEEC-37D72D2323D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896D03DE-DC86-4935-BEEC-37D72D2323D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896D03DE-DC86-4935-BEEC-37D72D2323D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896D03DE-DC86-4935-BEEC-37D72D2323D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E13D3879-B962-4072-9908-F548A87E9473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13D3879-B962-4072-9908-F548A87E9473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13D3879-B962-4072-9908-F548A87E9473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13D3879-B962-4072-9908-F548A87E9473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED82195-C5A5-44D1-948D-5B513DDF9179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED82195-C5A5-44D1-948D-5B513DDF9179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED82195-C5A5-44D1-948D-5B513DDF9179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED82195-C5A5-44D1-948D-5B513DDF9179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275AD67F-E85A-4BA9-AD48-08247E5E06DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275AD67F-E85A-4BA9-AD48-08247E5E06DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275AD67F-E85A-4BA9-AD48-08247E5E06DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275AD67F-E85A-4BA9-AD48-08247E5E06DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0AF883E-518E-4FE0-8F08-B6F7CF17C48A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0AF883E-518E-4FE0-8F08-B6F7CF17C48A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0AF883E-518E-4FE0-8F08-B6F7CF17C48A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0AF883E-518E-4FE0-8F08-B6F7CF17C48A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6883062D-DCB0-498B-8525-C0E1B0BB5710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6883062D-DCB0-498B-8525-C0E1B0BB5710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6883062D-DCB0-498B-8525-C0E1B0BB5710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6883062D-DCB0-498B-8525-C0E1B0BB5710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56F1291-3B40-46C9-923F-1725F462A15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56F1291-3B40-46C9-923F-1725F462A15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56F1291-3B40-46C9-923F-1725F462A15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56F1291-3B40-46C9-923F-1725F462A15C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4FEF6671-C625-40DE-BB38-6468A5903C9D} = {37FF03DB-0A12-4892-8E8F-D37C0FE8A9DD}
+		{E13D3879-B962-4072-9908-F548A87E9473} = {4FEF6671-C625-40DE-BB38-6468A5903C9D}
+		{4ED82195-C5A5-44D1-948D-5B513DDF9179} = {4FEF6671-C625-40DE-BB38-6468A5903C9D}
+		{275AD67F-E85A-4BA9-AD48-08247E5E06DC} = {4FEF6671-C625-40DE-BB38-6468A5903C9D}
+		{D5300C65-55EE-4881-90C3-E58F21190F75} = {4FEF6671-C625-40DE-BB38-6468A5903C9D}
+		{1902C84F-63A5-40F6-8E06-05695B4292AE} = {37FF03DB-0A12-4892-8E8F-D37C0FE8A9DD}
+		{F0AF883E-518E-4FE0-8F08-B6F7CF17C48A} = {1902C84F-63A5-40F6-8E06-05695B4292AE}
+		{6883062D-DCB0-498B-8525-C0E1B0BB5710} = {1902C84F-63A5-40F6-8E06-05695B4292AE}
+		{512005DB-3290-41C0-B410-D3F0E5114F8C} = {1902C84F-63A5-40F6-8E06-05695B4292AE}
+		{A56F1291-3B40-46C9-923F-1725F462A15C} = {1902C84F-63A5-40F6-8E06-05695B4292AE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2BB4CCA-1F38-4EBC-BC7C-411CBFD9B477}
+	EndGlobalSection
+EndGlobal
