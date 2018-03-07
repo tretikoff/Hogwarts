@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="..\Common.props" />
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{F4FE7993-CDBC-4E8B-8123-AD43148D16DF}</ProjectGuid>
+		<ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Qoden.Auth.iOS</RootNamespace>
+		<AssemblyName>Qoden.Auth.iOS</AssemblyName>
+		<IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+		<PackOnBuild>true</PackOnBuild>
+		<PackageId>Qoden.Auth.iOS</PackageId>
+		<Authors>Qoden Technologies</Authors>
+		<Description>iOS components to handle various authentication and authorization scenarios (including OAuth and OpenID)</Description>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug</OutputPath>
+		<DefineConstants>DEBUG;</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<CodesignKey>iPhone Developer</CodesignKey>
+		<MtouchDebug>true</MtouchDebug>
+		<MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+		<MtouchFastDev>true</MtouchFastDev>
+		<MtouchProfiling>true</MtouchProfiling>
+		<IOSDebuggerPort>15194</IOSDebuggerPort>
+		<DeviceSpecificBuild>false</DeviceSpecificBuild>
+		<MtouchLink>SdkOnly</MtouchLink>
+		<MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release</OutputPath>
+		<DefineConstants>
+		</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<CodesignKey>iPhone Developer</CodesignKey>
+		<MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+		<MtouchLink>SdkOnly</MtouchLink>
+		<MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="System.Xml" />
+		<Reference Include="System.Core" />
+		<Reference Include="Xamarin.iOS" />
+		<Reference Include="System.Web.Services" />
+		<Reference Include="System.IO.Compression" />
+		<Reference Include="System.Net.Http" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Resources\" />
+		<Folder Include="src\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="Properties\AssemblyInfo.cs" />
+		<Compile Include="src\SafariLoginPage.cs" />
+		<Compile Include="src\SecureStore.cs" />
+		<Compile Include="src\ISecureStoreStrategy.cs" />
+		<Compile Include="src\DefaultSecureStoreStrategy.cs" />
+		<Compile Include="src\Platform.cs" />
+		<Compile Include="src\KeychainException.cs" />
+		<Compile Include="src\EmbeddedSafariLoginPage.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="Qoden.Auth.iOS.csproj" />
+		<None Include="README.md" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Auth\Qoden.Auth.csproj">
+			<Project>{14E523EB-B05A-442E-8E58-0DE1764E90C7}</Project>
+			<Name>Qoden.Auth</Name>
+		</ProjectReference>
+		<PackageReference Include="Xam.Plugin.DeviceInfo" Version="3.0.1" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="$(IdentityModelVersion)" />
+  		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(LoggingVersion)" />
+		<PackageReference Include="Qoden.Validation" Version="$(QodenValidationVersion)" />
+		<PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+		<PackageReference Include="Qoden.Util" Version="$(QodenUtilVersion)" />
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
