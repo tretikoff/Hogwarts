@@ -15,19 +15,15 @@ namespace SignUp
 
             Bindings.Property(_model, x => x.Login)
                 .To(View.Login.TextProperty())
-                .AfterUpdate((binding, source) =>
-                {
-                    binding.UpdateSource();
-
-                });
+                .AfterUpdate((binding, source) => { binding.UpdateSource(); });
 
             Bindings.Property(_model, x => x.Password)
                 .To(View.Password.TextProperty())
-                .OneWayToSource();
+                .AfterUpdate((binding, source) => { binding.UpdateSource(); });
 
             Bindings.Property(_model, x => x.ConfirmPassword)
                 .To(View.ConfirmPassword.TextProperty())
-                .OneWayToSource();
+                .AfterUpdate((binding, source) => { binding.UpdateSource(); });
 
             Bindings.Command(_model.SignUpCommand)
                 .To(View.SignUp.ClickTarget());

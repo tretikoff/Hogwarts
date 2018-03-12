@@ -11,17 +11,17 @@ namespace SignUp
         Theme = "@style/Theme.AppCompat.Light.DarkActionBar")]
     public class SignUpActivity : AppCompatActivity
     {
-        private SignUpController SignUpController;
+        private SignUpController _signUpController;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
 
-            SignUpController = new SignUpController();
+            _signUpController = new SignUpController();
 
             SupportFragmentManager.BeginTransaction()
-                .Add(Resource.Id.content_frame, SignUpController)
+                .Add(Resource.Id.content_frame, _signUpController)
                 .Commit();
         }
     }
