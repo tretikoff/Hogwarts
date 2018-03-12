@@ -1,12 +1,13 @@
-﻿#if __ANDROID__
+﻿using Qoden.UI;
+using Qoden.UI.Wrappers;
+using Button = Qoden.UI.Wrappers.Button;
+#if __ANDROID__
 using Android.Content;
 using Android.Runtime;
 using Android.Text;
 using Android.Widget;
+
 #endif
-using Qoden.UI;
-using Qoden.UI.Wrappers;
-using Button = Qoden.UI.Wrappers.Button;
 
 namespace SignUp
 {
@@ -17,7 +18,12 @@ namespace SignUp
         public TextField Password { get; }
         public TextField ConfirmPassword { get; }
 
+#if __IOS__
+        public SignUpView()
+#endif
+#if __ANDROID__
         public SignUpView(Context context) : base(context)
+#endif
         {
             SignUp = Builder.Button();
             SignUp.SetText("Sign up");
@@ -34,7 +40,7 @@ namespace SignUp
 
         protected override void OnLayout(LayoutBuilder layout)
         {
-            //my phone content area is 360x511dp
+            //DP values are hardcoded for my phone (360x511dp) because CenterVertically doesn't work correctly
 
             var login = layout.View(Login)
                 .Top(50.Dp())
