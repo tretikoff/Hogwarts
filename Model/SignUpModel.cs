@@ -1,4 +1,6 @@
-﻿using Qoden.Binding;
+﻿using System;
+using Microsoft.Extensions.Logging;
+using Qoden.Binding;
 
 namespace SignUp
 {
@@ -8,7 +10,7 @@ namespace SignUp
         public string Password { get; set; }
         public string ConfirmPassword { get; set; }
 
-        private Command SignUpCommand;
+        public Command SignUpCommand;
 
         public SignUpModel()
         {
@@ -19,12 +21,14 @@ namespace SignUp
             };
         }
 
-        private bool FieldsAreValid(object arg) =>
+        public bool FieldsAreValid(object arg) =>
             Login.Length >= 3 && Password.Equals(ConfirmPassword);
+//            false;
 
         private void PerformSignUp(object obj)
         {
             //TODO: show alert or something
+            System.Diagnostics.Debug.WriteLine("Signing Up !");
         }
     }
 }
