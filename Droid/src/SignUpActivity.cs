@@ -11,7 +11,7 @@ namespace SignUp
         MainLauncher = true,
         Icon = "@drawable/icon",
         Theme = "@style/Theme.AppCompat.Light.DarkActionBar")]
-    public class MainActivity : AppCompatActivity
+    public class SignUpActivity : AppCompatActivity
     {
         private SignUpController SignUpController;
 

@@ -8,7 +8,8 @@
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>Shared</Import_RootNamespace>
   </PropertyGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Class1.cs"/>
+    <Folder Include="$(MSBuildThisFileDirectory)src" />
   </ItemGroup>
 </Project>

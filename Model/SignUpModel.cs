@@ -1,5 +1,4 @@
-﻿using System;
-using Qoden.Binding;
+﻿using Qoden.Binding;
 
 namespace SignUp
 {
