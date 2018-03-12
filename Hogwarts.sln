@@ -42,6 +42,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qoden.Auth", "Lib\Qoden.Aut
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\Shared.projitems*{54b66535-7fcc-4bfb-a942-1536c62ba187}*SharedItemsImports = 4
+		Shared\Shared.projitems*{b5a3e9a5-b6de-4475-9b7f-71a2c39de074}*SharedItemsImports = 4
 		Lib\Qoden.UI\Shared\Qoden.UI.Shared.projitems*{d5300c65-55ee-4881-90c3-e58f21190f75}*SharedItemsImports = 13
 		Lib\Qoden.UI\Shared\Qoden.UI.Shared.projitems*{e13d3879-b962-4072-9908-f548a87e9473}*SharedItemsImports = 4
 		Shared\Shared.projitems*{ecbe11de-829c-4190-8c0b-49b5edd74eef}*SharedItemsImports = 13
@@ -54,6 +56,7 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B5A3E9A5-B6DE-4475-9B7F-71A2C39DE074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B5A3E9A5-B6DE-4475-9B7F-71A2C39DE074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A3E9A5-B6DE-4475-9B7F-71A2C39DE074}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{B5A3E9A5-B6DE-4475-9B7F-71A2C39DE074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5A3E9A5-B6DE-4475-9B7F-71A2C39DE074}.Release|Any CPU.Build.0 = Release|Any CPU
 		{896D03DE-DC86-4935-BEEC-37D72D2323D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
