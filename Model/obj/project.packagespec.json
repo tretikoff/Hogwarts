@@ -1,0 +1,42 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "E:\\Hogwarts\\Model\\Model.csproj",
+    "projectName": "Model",
+    "projectPath": "E:\\Hogwarts\\Model\\Model.csproj",
+    "outputPath": "E:\\Hogwarts\\Model\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netstandard1.4"
+    ],
+    "frameworks": {
+      "netstandard1.4": {
+        "projectReferences": {
+          "E:\\Hogwarts\\Lib\\Qoden.UI\\Binding\\Qoden.Binding.csproj": {
+            "projectPath": "E:\\Hogwarts\\Lib\\Qoden.UI\\Binding\\Qoden.Binding.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netstandard1.4": {
+      "dependencies": {
+        "NETStandard.Library": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[1.6.1, )",
+          "autoReferenced": true
+        }
+      }
+    }
+  }
+}

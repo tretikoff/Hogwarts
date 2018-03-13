@@ -1,0 +1,11 @@
+E:\Hogwarts\Model\bin\Debug\netstandard1.4\Model.deps.json
+E:\Hogwarts\Model\bin\Debug\netstandard1.4\Model.dll
+E:\Hogwarts\Model\bin\Debug\netstandard1.4\Model.pdb
+E:\Hogwarts\Model\bin\Debug\netstandard1.4\Qoden.Binding.dll
+E:\Hogwarts\Model\bin\Debug\netstandard1.4\Qoden.Binding.pdb
+E:\Hogwarts\Model\obj\Debug\netstandard1.4\Model.csprojResolveAssemblyReference.cache
+E:\Hogwarts\Model\obj\Debug\netstandard1.4\Model.csproj.CoreCompileInputs.cache
+E:\Hogwarts\Model\obj\Debug\netstandard1.4\Model.AssemblyInfoInputs.cache
+E:\Hogwarts\Model\obj\Debug\netstandard1.4\Model.AssemblyInfo.cs
+E:\Hogwarts\Model\obj\Debug\netstandard1.4\Model.dll
+E:\Hogwarts\Model\obj\Debug\netstandard1.4\Model.pdb

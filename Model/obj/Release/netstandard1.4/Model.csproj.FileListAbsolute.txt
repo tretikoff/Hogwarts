@@ -1,0 +1,12 @@
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\bin\Release\netstandard1.4\Model.deps.json
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\bin\Release\netstandard1.4\Model.dll
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\bin\Release\netstandard1.4\Model.pdb
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\bin\Release\netstandard1.4\Qoden.Binding.dll
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\bin\Release\netstandard1.4\Qoden.Binding.pdb
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\obj\Release\netstandard1.4\Model.csprojResolveAssemblyReference.cache
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\obj\Release\netstandard1.4\Model.csproj.CoreCompileInputs.cache
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\obj\Release\netstandard1.4\Model.AssemblyInfoInputs.cache
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\obj\Release\netstandard1.4\Model.AssemblyInfo.cs
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\obj\Release\netstandard1.4\Model.csproj.CopyComplete
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\obj\Release\netstandard1.4\Model.dll
+D:\Study\StudioMobile\Qoden\Hogwarts\Model\obj\Release\netstandard1.4\Model.pdb

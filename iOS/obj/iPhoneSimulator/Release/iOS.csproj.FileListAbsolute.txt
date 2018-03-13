@@ -1,0 +1,17 @@
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\bin\iPhoneSimulator\Release\iOS.exe
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\bin\iPhoneSimulator\Release\Model.dll
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\bin\iPhoneSimulator\Release\Qoden.Binding.dll
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\bin\iPhoneSimulator\Release\Qoden.UI.iOS.dll
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\bin\iPhoneSimulator\Release\Qoden.Binding.pdb
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\bin\iPhoneSimulator\Release\Qoden.UI.iOS.pdb
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\bin\iPhoneSimulator\Release\Model.pdb
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\obj\iPhoneSimulator\Release\ibtool\_BundleResourceWithLogicalName.items
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\obj\iPhoneSimulator\Release\actool\_PartialAppManifest.items
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\obj\iPhoneSimulator\Release\actool\_BundleResourceWithLogicalName.items
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\obj\iPhoneSimulator\Release\coremlc\_PartialAppManifest.items
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\obj\iPhoneSimulator\Release\coremlc\_BundleResourceWithLogicalName.items
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\obj\iPhoneSimulator\Release\optimized\
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\obj\iPhoneSimulator\Release\iOS.csprojResolveAssemblyReference.cache
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\obj\iPhoneSimulator\Release\iOS.csproj.CoreCompileInputs.cache
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\obj\iPhoneSimulator\Release\iOS.csproj.CopyComplete
+D:\Study\StudioMobile\Qoden\Hogwarts\iOS\obj\iPhoneSimulator\Release\iOS.exe

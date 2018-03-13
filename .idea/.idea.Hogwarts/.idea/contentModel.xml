@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\treti\.nuget\packages\mstest.testadapter\1.1.18\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\treti\.nuget\packages\mstest.testadapter\1.1.18\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" t="Include" />
+    <e p="C:\Users\treti\.nuget\packages\mstest.testadapter\1.1.18\build\netcoreapp1.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" t="Include" />
+    <e p="C:\Users\treti\.nuget\packages\xamarin.android.support.animated.vector.drawable\26.0.2\proguard" t="Include">
+      <e p="proguard.txt" t="Include" />
+    </e>
+    <e p="C:\Users\treti\.nuget\packages\xamarin.android.support.core.ui\26.0.2\proguard" t="Include">
+      <e p="proguard.txt" t="Include" />
+    </e>
+    <e p="C:\Users\treti\.nuget\packages\xamarin.android.support.design\26.0.2\proguard" t="Include">
+      <e p="proguard.txt" t="Include" />
+    </e>
+    <e p="C:\Users\treti\.nuget\packages\xamarin.android.support.media.compat\26.0.2\proguard" t="Include">
+      <e p="proguard.txt" t="Include" />
+    </e>
+    <e p="C:\Users\treti\.nuget\packages\xamarin.android.support.v7.recyclerview\26.0.2\proguard" t="Include">
+      <e p="proguard.txt" t="Include" />
+    </e>
+    <e p="C:\Users\treti\.nuget\packages\xunit.runner.visualstudio\2.2.0\build\netcoreapp1.0\xunit.runner.reporters.netstandard15.dll" t="Include" />
+    <e p="C:\Users\treti\.nuget\packages\xunit.runner.visualstudio\2.2.0\build\netcoreapp1.0\xunit.runner.utility.netstandard15.dll" t="Include" />
+    <e p="C:\Users\treti\.nuget\packages\xunit.runner.visualstudio\2.2.0\build\netcoreapp1.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="C:\Users\treti\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Hogwarts.-1802991761.00" t="ExcludeRecursive" />
+    <e p="E:\Hogwarts" t="IncludeFlat">
+      <e p="Droid" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Droid.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AndroidManifest.xml" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="drawable" t="Include">
+            <e p="Icon.png" t="Include" />
+          </e>
+          <e p="layout" t="Include">
+            <e p="Main.axml" t="Include" />
+          </e>
+          <e p="Resource.Designer.cs" t="Include" />
+          <e p="values" t="Include">
+            <e p="Strings.xml" t="Include" />
+          </e>
+        </e>
+        <e p="src" t="Include">
+          <e p="SignUpActivity.cs" t="Include" />
+          <e p="SignUpApplication.cs" t="Include" />
+          <e p="SignUpController.cs" t="Include" />
+          <e p="SignUpView.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Hogwarts.sln" t="IncludeFlat" />
+      <e p="iOS" t="IncludeRecursive">
+        <e p="AppDelegate.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="iOS.csproj" t="IncludeRecursive" />
+        <e p="Main.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="LaunchScreen.xib" t="Include" />
+        </e>
+      </e>
+      <e p="Lib" t="Include">
+        <e p="Qoden.Auth" t="Include">
+          <e p="Auth" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netstandard1.4" t="Include">
+                  <e p="Qoden.Auth.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Qoden.Auth.csproj" t="IncludeRecursive" />
+            <e p="src" t="Include">
+              <e p="AbstractPlatform.cs" t="Include" />
+              <e p="AuthException.cs" t="Include" />
+              <e p="AzureOAuthApi.cs" t="Include" />
+              <e p="Config.cs" t="Include" />
+              <e p="GoogleOAuthApi.cs" t="Include" />
+              <e p="IAuthStrategy.cs" t="Include" />
+              <e p="IOAuthLoginUI.cs" t="Include" />
+              <e p="ISecureStore.cs" t="Include" />
+              <e p="OAuthApi.cs" t="Include" />
+              <e p="OAuthClientSideFlow.cs" t="Include" />
+              <e p="OAuthConfig.cs" t="Include" />
+              <e p="OAuthException.cs" t="Include" />
+              <e p="OAuthGrantCodeFlow.cs" t="Include" />
+              <e p="OAuthLoginPage.cs" t="Include" />
+              <e p="OAuthStrategy.cs" t="Include" />
+              <e p="Principal.cs" t="Include" />
+            </e>
+          </e>
+          <e p="build" t="Include" />
+          <e p="Common.props" t="Include" />
+          <e p="Droid" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="BrowserLoginPage.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive" />
+            <e p="Platform.cs" t="Include" />
+            <e p="Properties" t="Include">
+              <e p="AssemblyInfo.cs" t="Include" />
+            </e>
+            <e p="Qoden.Auth.Droid.csproj" t="IncludeRecursive" />
+            <e p="README.md" t="Include" />
+            <e p="Resources" t="Include">
+              <e p="AboutResources.txt" t="Include" />
+              <e p="Resource.Designer.cs" t="Include" />
+              <e p="values" t="Include">
+                <e p="Strings.xml" t="Include" />
+              </e>
+            </e>
+            <e p="SecureStore.cs" t="Include" />
+          </e>
+          <e p="iOS" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive" />
+            <e p="Properties" t="Include">
+              <e p="AssemblyInfo.cs" t="Include" />
+            </e>
+            <e p="Qoden.Auth.iOS.csproj" t="IncludeRecursive" />
+            <e p="README.md" t="Include" />
+            <e p="Resources" t="Include" />
+            <e p="src" t="Include">
+              <e p="DefaultSecureStoreStrategy.cs" t="Include" />
+              <e p="EmbeddedSafariLoginPage.cs" t="Include" />
+              <e p="ISecureStoreStrategy.cs" t="Include" />
+              <e p="KeychainException.cs" t="Include" />
+              <e p="Platform.cs" t="Include" />
+              <e p="SafariLoginPage.cs" t="Include" />
+              <e p="SecureStore.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Qoden.Auth.sln" t="Include" />
+          <e p="Test" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="CustodianTest.cs" t="Include" />
+            <e p="FakeLoginPage.cs" t="Include" />
+            <e p="FakeOAuthServer.cs" t="Include" />
+            <e p="FakeSecureStore.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp1.1" t="Include">
+                  <e p="Qoden.Auth.Test.AssemblyInfo.cs" t="Include" />
+                  <e p="Qoden.Auth.Test.Program.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Qoden.Auth.Test.csproj" t="IncludeRecursive" />
+          </e>
+        </e>
+        <e p="Qoden.UI" t="Include">
+          <e p="Binding" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="LogginUtil.cs" t="Include" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netstandard1.4" t="Include">
+                  <e p="Qoden.Binding.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Properties" t="Include">
+              <e p="AssemblyInfo.cs" t="Include" />
+            </e>
+            <e p="Qoden.Binding.csproj" t="IncludeRecursive" />
+            <e p="Qoden.Binding.csproj.DotSettings" t="Include" />
+            <e p="README.md" t="Include" />
+            <e p="src" t="Include">
+              <e p="BindingList.cs" t="Include" />
+              <e p="Command" t="Include">
+                <e p="AsyncCommand.cs" t="Include" />
+                <e p="AsyncCommandBase.cs" t="Include" />
+                <e p="Command.cs" t="Include" />
+                <e p="IAsyncCommand.cs" t="Include" />
+                <e p="ICommand.cs" t="Include" />
+              </e>
+              <e p="CommandBinding" t="Include">
+                <e p="CommandBinding.cs" t="Include" />
+                <e p="CommandBindingBuilder.cs" t="Include" />
+                <e p="EventSource.cs" t="Include" />
+              </e>
+              <e p="Config.cs" t="Include" />
+              <e p="DataContext.cs" t="Include" />
+              <e p="IBinding.cs" t="Include" />
+              <e p="ObjectBinding.cs" t="Include" />
+              <e p="ObservableList.cs" t="Include" />
+              <e p="PropertyBindings" t="Include">
+                <e p="BindingExtensions.cs" t="Include" />
+                <e p="NotifyPropertyChangedProperties.cs" t="Include" />
+                <e p="Property.cs" t="Include" />
+                <e p="PropertyBinding.cs" t="Include" />
+                <e p="PropertyBindingBuilder.cs" t="Include" />
+                <e p="PropertyBindingStrategy.cs" t="Include" />
+                <e p="PropertyConversion.cs" t="Include" />
+              </e>
+              <e p="ValidatorBindings.cs" t="Include" />
+              <e p="WeakCollection.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Droid" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive" />
+            <e p="Properties" t="Include">
+              <e p="AssemblyInfo.cs" t="Include" />
+            </e>
+            <e p="Qoden.UI.Android.csproj" t="IncludeRecursive" />
+            <e p="Resources" t="Include">
+              <e p="AboutResources.txt" t="Include" />
+              <e p="Resource.Designer.cs" t="Include" />
+              <e p="values" t="Include">
+                <e p="Strings.xml" t="Include" />
+                <e p="Styles.xml" t="Include" />
+              </e>
+            </e>
+            <e p="src" t="Include">
+              <e p="Bindings" t="Include">
+                <e p="AdapterViewBindings.cs" t="Include" />
+                <e p="CompoundButtonBindings.cs" t="Include" />
+                <e p="RemoteImageViewBindings.cs" t="Include" />
+                <e p="TextViewBindings.cs" t="Include" />
+                <e p="ViewBindings.cs" t="Include" />
+                <e p="ViewPagerBindings.cs" t="Include" />
+              </e>
+              <e p="ChildViewControllersList.cs" t="Include" />
+              <e p="Graphics" t="Include">
+                <e p="FontIconDrawable.cs" t="Include" />
+                <e p="TypefaceCollection.cs" t="Include" />
+              </e>
+              <e p="GroupedObservableAdapter.cs" t="Include" />
+              <e p="IControllerHost.cs" t="Include" />
+              <e p="IDetachedController.cs" t="Include" />
+              <e p="ImageFactory.cs" t="Include" />
+              <e p="IReverseAdapter.cs" t="Include" />
+              <e p="IViewHost.cs" t="Include" />
+              <e p="ListItemContext.cs" t="Include" />
+              <e p="PlainListBinding.cs" t="Include" />
+              <e p="QodenActivity.cs" t="Include" />
+              <e p="QodenApplication.cs" t="Include" />
+              <e p="QodenController.cs" t="Include" />
+              <e p="QodenDialog.cs" t="Include" />
+              <e p="QodenScrollView.cs" t="Include" />
+              <e p="RemoteImageView.cs" t="Include" />
+              <e p="TabsBuilder.cs" t="Include" />
+              <e p="View" t="Include">
+                <e p="GroupedListContent.cs" t="Include" />
+                <e p="PlainListContent.cs" t="Include" />
+              </e>
+              <e p="ViewHolder.cs" t="Include" />
+              <e p="ViewModelStore.cs" t="Include" />
+            </e>
+          </e>
+          <e p="iOS" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive" />
+            <e p="Properties" t="Include">
+              <e p="AssemblyInfo.cs" t="Include" />
+            </e>
+            <e p="Qoden.UI.iOS.csproj" t="IncludeRecursive" />
+            <e p="Resources" t="Include" />
+            <e p="src" t="Include">
+              <e p="AssociatedObject.cs" t="Include" />
+              <e p="Bindings" t="Include">
+                <e p="KVCBindingStrategy.cs" t="Include" />
+                <e p="RemoteImageViewBindings.cs" t="Include" />
+                <e p="UIActivityIndicatorViewBindings.cs" t="Include" />
+                <e p="UIBarButtonItemBindings.cs" t="Include" />
+                <e p="UIControlBindings.cs" t="Include" />
+                <e p="UILabelBindings.cs" t="Include" />
+                <e p="UISegmentedControlBindings.cs" t="Include" />
+                <e p="UITextFieldBindings.cs" t="Include" />
+                <e p="UITextViewBindings.cs" t="Include" />
+                <e p="UIViewBindings.cs" t="Include" />
+                <e p="UIViewClickEventSource.cs" t="Include" />
+              </e>
+              <e p="DateUtil.cs" t="Include" />
+              <e p="Graphics" t="Include">
+                <e p="CGPathExtensions.cs" t="Include" />
+                <e p="Font.cs" t="Include" />
+                <e p="FontIconAppearance.cs" t="Include" />
+                <e p="FontIconGenerator.cs" t="Include" />
+              </e>
+              <e p="GroupedUITableViewDataSource.cs" t="Include" />
+              <e p="KeyboardScroller.cs" t="Include" />
+              <e p="layout" t="Include">
+                <e p="LayoutBoxExtensions.cs" t="Include" />
+              </e>
+              <e p="ListItemContext.cs" t="Include" />
+              <e p="NSNotificationCenterSubscription.cs" t="Include" />
+              <e p="PhoneAsYouTypeFormatter.cs" t="Include" />
+              <e p="PhoneNumberFormatter.cs" t="Include" />
+              <e p="PlainListBinding.cs" t="Include" />
+              <e p="QodenController.cs" t="Include" />
+              <e p="QodenDialog.cs" t="Include" />
+              <e p="QodenScrollView.cs" t="Include" />
+              <e p="RemoteImageView.cs" t="Include" />
+              <e p="TabsBuilder.cs" t="Include" />
+              <e p="UIImageExtensions.cs" t="Include" />
+              <e p="UIPickerViewBinding.cs" t="Include" />
+              <e p="UITableViewBindingBase.cs" t="Include" />
+              <e p="UIViewControllerExtensions.cs" t="Include" />
+              <e p="View" t="Include">
+                <e p="FontIconExtensions.cs" t="Include" />
+                <e p="GroupedListContent.cs" t="Include" />
+                <e p="PlainListContent.cs" t="Include" />
+                <e p="TableViewUtil.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Shared" t="IncludeRecursive">
+            <e p="Config.cs" t="Include" />
+            <e p="FontAwesome.cs" t="Include" />
+            <e p="GroupedListContent.cs" t="Include" />
+            <e p="IFontIconGenerator.cs" t="Include" />
+            <e p="layout" t="Include">
+              <e p="ILayoutable.cs" t="Include" />
+              <e p="ILayoutBox.cs" t="Include" />
+              <e p="IViewLayoutBox.cs" t="Include" />
+              <e p="LayoutBox.cs" t="Include" />
+              <e p="LayoutBoxAround.cs" t="Include" />
+              <e p="LayoutBoxCenter.cs" t="Include" />
+              <e p="LayoutBoxFrame.cs" t="Include" />
+              <e p="LayoutBoxLTRBWH.cs" t="Include" />
+              <e p="LayoutBoxMinMax.cs" t="Include" />
+              <e p="LayoutBoxRelative.cs" t="Include" />
+              <e p="LayoutBuilder.cs" t="Include" />
+              <e p="LayoutBuilderDistribute.cs" t="Include" />
+              <e p="LinearLayoutBuilder.cs" t="Include" />
+              <e p="Units.cs" t="Include" />
+              <e p="ViewLayoutBox.cs" t="Include" />
+              <e p="ViewLayoutUtil.cs" t="Include" />
+              <e p="ViewSizing.cs" t="Include" />
+            </e>
+            <e p="LinkerTrick.cs" t="Include" />
+            <e p="PlainListContent.cs" t="Include" />
+            <e p="Pool.cs" t="Include" />
+            <e p="Primitives" t="Include">
+              <e p="ColorFromString.cs" t="Include" />
+              <e p="EdgeInsets.cs" t="Include" />
+              <e p="Font.cs" t="Include" />
+              <e p="Image.cs" t="Include" />
+              <e p="Matrix2d.cs" t="Include" />
+              <e p="RemoteImage.cs" t="Include" />
+              <e p="RGB.cs" t="Include" />
+              <e p="TextAlignment.cs" t="Include" />
+            </e>
+            <e p="Qoden.UI.Shared.projitems" t="Include" />
+            <e p="Qoden.UI.Shared.shproj" t="IncludeRecursive" />
+            <e p="QodenTableViewCell.cs" t="Include" />
+            <e p="QodenView.cs" t="Include" />
+            <e p="RemoteImageViewModel.cs" t="Include" />
+            <e p="Utils" t="Include">
+              <e p="BindingListHolder.cs" t="Include" />
+            </e>
+            <e p="ViewBuilder.cs" t="Include" />
+            <e p="ViewModelStore.cs" t="Include" />
+            <e p="Wrappers" t="Include">
+              <e p="Button.cs" t="Include" />
+              <e p="GroupTableView.cs" t="Include" />
+              <e p="ImageView.cs" t="Include" />
+              <e p="Label.cs" t="Include" />
+              <e p="ProgressBar.cs" t="Include" />
+              <e p="TableView.cs" t="Include" />
+              <e p="TableViewCell.cs" t="Include" />
+              <e p="TextField.cs" t="Include" />
+              <e p="View.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Test" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp1.1" t="Include">
+                  <e p="Qoden.UI.Test.AssemblyInfo.cs" t="Include" />
+                  <e p="Qoden.UI.Test.Program.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Qoden.UI.Test.csproj" t="IncludeRecursive" />
+            <e p="src" t="Include">
+              <e p="AsyncCommandTest.cs" t="Include" />
+              <e p="BindingListTest.cs" t="Include" />
+              <e p="CommandBindingTest.cs" t="Include" />
+              <e p="CommandTest.cs" t="Include" />
+              <e p="DataContextTest.cs" t="Include" />
+              <e p="FakeModel.cs" t="Include" />
+              <e p="FakeUIControl.cs" t="Include" />
+              <e p="FakeViewLayoutBox.cs" t="Include" />
+              <e p="layout" t="Include" />
+              <e p="LayoutBoxTest.cs" t="Include" />
+              <e p="LayoutBuilderDistributeTest.cs" t="Include" />
+              <e p="LayoutBuilderTest.cs" t="Include" />
+              <e p="LinearLayoutBuilderTest.cs" t="Include" />
+              <e p="ObservableListTest.cs" t="Include" />
+              <e p="PlatformView.cs" t="Include" />
+              <e p="Primitives" t="Include" />
+              <e p="PropertyBindingTest.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Model" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Model.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard1.4" t="Include">
+              <e p="Model.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SignUpModel.cs" t="Include" />
+        <e p="User.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive">
+        <e p="Xamarin.Android.Support.Animated.Vector.Drawable.26.0.2\proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Core.UI.26.0.2\proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Design.26.0.2\proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Media.Compat.26.0.2\proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.v7.RecyclerView.26.0.2\proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+      </e>
+      <e p="Shared" t="IncludeRecursive">
+        <e p="Register" t="Include">
+          <e p="SignUpForm.cs" t="Include" />
+        </e>
+        <e p="Shared.projitems" t="Include" />
+        <e p="Shared.shproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
