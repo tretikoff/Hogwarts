@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Extensions.Logging;
+﻿
 using Qoden.Binding;
 
 namespace SignUp
@@ -19,11 +18,11 @@ namespace SignUp
                 Action = PerformSignUp,
                 CanExecute = FieldsAreValid
             };
+            SignUpCommand.RaiseCanExecuteChanged();
         }
 
         public bool FieldsAreValid(object arg) =>
-            Login != null /*&& Password != null && ConfirmPassword != null */&&
-            Login.Length >= 3 && string.Equals(Password, ConfirmPassword);
+            Login?.Length >= 3 && string.Equals(Password, ConfirmPassword);
 
         private void PerformSignUp(object obj)
         {

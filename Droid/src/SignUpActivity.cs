@@ -21,7 +21,8 @@ namespace SignUp
             _signUpController = new SignUpController();
 
             SupportFragmentManager.BeginTransaction()
-                .Add(Resource.Id.content_frame, _signUpController)
+                .Replace(Resource.Id.content_frame, _signUpController)
+//                .Add(Resource.Id.content_frame, _signUpController)
                 .Commit();
         }
     }

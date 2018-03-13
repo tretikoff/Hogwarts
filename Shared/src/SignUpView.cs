@@ -3,9 +3,7 @@ using Qoden.UI.Wrappers;
 using Button = Qoden.UI.Wrappers.Button;
 #if __ANDROID__
 using Android.Content;
-using Android.Runtime;
 using Android.Text;
-using Android.Widget;
 
 #endif
 
@@ -36,18 +34,32 @@ namespace SignUp
 
             ConfirmPassword = Builder.TextField();
             ConfirmPassword.SetHint("Confirm Password");
+
+#if __ANDROID__
+            Login.PlatformView.InputType =
+                InputTypes.TextVariationVisiblePassword | InputTypes.TextFlagNoSuggestions;
+
+            //show dots instead of symbols
+            Password.PlatformView.InputType =
+                InputTypes.TextVariationPassword | InputTypes.ClassText;
+
+            ConfirmPassword.PlatformView.InputType =
+                InputTypes.TextVariationPassword | InputTypes.ClassText;
+#endif
         }
 
         protected override void OnLayout(LayoutBuilder layout)
         {
+            var outerBounds = layout.PaddedOuterBounds;
+
             var login = layout.View(Login)
-                .Top(50.Dp())
+                .Top(outerBounds.Bottom * 0.1f)
                 .AutoSize()
                 .Width(200.Dp())
                 .CenterHorizontally();
 
             var password = layout.View(Password)
-                .Below(login, 50.Dp())
+                .Below(login, outerBounds.Bottom * 0.1f)
                 .AutoSize()
                 .MinWidth(200.Dp())
                 .CenterHorizontally();
@@ -58,26 +70,13 @@ namespace SignUp
                 .MinWidth(200.Dp())
                 .CenterHorizontally();
 
+
             var signUp = layout.View(SignUp)
-                .Bottom(30.Dp())
                 .Height(60.Dp())
                 .Width(180.Dp())
+                .Top(confirmPassword.Bottom +
+                     (outerBounds.Bottom - confirmPassword.Bottom) * 0.95f - 60.Dp())
                 .CenterHorizontally();
-
-#if __ANDROID__
-            var loginPlatformView = Login.AsView().PlatformView.JavaCast<EditText>();
-            loginPlatformView.InputType =
-                InputTypes.TextVariationVisiblePassword | InputTypes.TextFlagNoSuggestions;
-
-            var passwordPlatformView = Password.AsView().PlatformView.JavaCast<EditText>();
-            passwordPlatformView.InputType =
-                InputTypes.TextVariationPassword | InputTypes.ClassText;
-
-            var confirmPasswordPlatformView =
-                ConfirmPassword.AsView().PlatformView.JavaCast<EditText>();
-            confirmPasswordPlatformView.InputType =
-                InputTypes.TextVariationPassword | InputTypes.ClassText;
-#endif
         }
     }
 }

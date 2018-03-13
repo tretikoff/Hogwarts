@@ -13,41 +13,35 @@ namespace SignUp
 
             _model = this.GetViewModelStore().Get(() => new SignUpModel());
 
-            var signUpCommandBinding = new CommandBinding
-            {
-                Command = _model.SignUpCommand,
-                Trigger = View.SignUp.ClickTarget()
-            };
+//            var signUpCommandBinding = new CommandBinding
+//            {
+//                Command = _model.SignUpCommand,
+//                Trigger = View.SignUp.ClickTarget()
+//            };
+//
+//            void UpdateSourceAndCommand(IPropertyBinding binding, ChangeSource source)
+//            {
+//                binding.UpdateSource();
+//                signUpCommandBinding.UpdateTarget();
+//            }
 
-            void UpdateSourceAndCommand(IPropertyBinding binding, ChangeSource source)
-            {
-                binding.UpdateSource();
-                signUpCommandBinding.UpdateTarget();
-            }
-
-            //doesn't update button state
+            //BUG: button state is not updated
             Bindings.Command(_model.SignUpCommand)
                 .To(View.SignUp.ClickTarget());
 
             Bindings.Property(_model, x => x.Login)
                 .To(View.Login.TextProperty())
-                .AfterTargetUpdate(UpdateSourceAndCommand);
+                .AfterTargetUpdate((binding, source) => binding.UpdateSource());
+
 
             Bindings.Property(_model, x => x.Password)
                 .To(View.Password.TextProperty())
-                .AfterTargetUpdate(UpdateSourceAndCommand);
+                .AfterTargetUpdate((binding, source) => binding.UpdateSource());
 
             Bindings.Property(_model, x => x.ConfirmPassword)
                 .To(View.ConfirmPassword.TextProperty())
-                .AfterTargetUpdate(UpdateSourceAndCommand);
+                .AfterTargetUpdate((binding, source) => binding.UpdateSource());
 
-            Bindings.Bind();
-        }
-
-        public override void OnDestroyView()
-        {
-            base.OnDestroyView();
-            Bindings.Unbind();
         }
     }
 }
