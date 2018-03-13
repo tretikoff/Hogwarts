@@ -13,22 +13,41 @@ namespace SignUp
 
             _model = this.GetViewModelStore().Get(() => new SignUpModel());
 
-            Bindings.Property(_model, x => x.Login)
-                .To(View.Login.TextProperty())
-                .AfterUpdate((binding, source) => { binding.UpdateSource(); });
+            var signUpCommandBinding = new CommandBinding
+            {
+                Command = _model.SignUpCommand,
+                Trigger = View.SignUp.ClickTarget()
+            };
 
-            Bindings.Property(_model, x => x.Password)
-                .To(View.Password.TextProperty())
-                .AfterUpdate((binding, source) => { binding.UpdateSource(); });
+            void UpdateSourceAndCommand(IPropertyBinding binding, ChangeSource source)
+            {
+                binding.UpdateSource();
+                signUpCommandBinding.UpdateTarget();
+            }
 
-            Bindings.Property(_model, x => x.ConfirmPassword)
-                .To(View.ConfirmPassword.TextProperty())
-                .AfterUpdate((binding, source) => { binding.UpdateSource(); });
-
+            //doesn't update button state
             Bindings.Command(_model.SignUpCommand)
                 .To(View.SignUp.ClickTarget());
 
+            Bindings.Property(_model, x => x.Login)
+                .To(View.Login.TextProperty())
+                .AfterTargetUpdate(UpdateSourceAndCommand);
+
+            Bindings.Property(_model, x => x.Password)
+                .To(View.Password.TextProperty())
+                .AfterTargetUpdate(UpdateSourceAndCommand);
+
+            Bindings.Property(_model, x => x.ConfirmPassword)
+                .To(View.ConfirmPassword.TextProperty())
+                .AfterTargetUpdate(UpdateSourceAndCommand);
+
             Bindings.Bind();
+        }
+
+        public override void OnDestroyView()
+        {
+            base.OnDestroyView();
+            Bindings.Unbind();
         }
     }
 }

@@ -22,8 +22,8 @@ namespace SignUp
         }
 
         public bool FieldsAreValid(object arg) =>
-            Login.Length >= 3 && Password.Equals(ConfirmPassword);
-//            false;
+            Login != null /*&& Password != null && ConfirmPassword != null */&&
+            Login.Length >= 3 && string.Equals(Password, ConfirmPassword);
 
         private void PerformSignUp(object obj)
         {

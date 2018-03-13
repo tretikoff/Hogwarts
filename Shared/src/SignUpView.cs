@@ -40,31 +40,29 @@ namespace SignUp
 
         protected override void OnLayout(LayoutBuilder layout)
         {
-            //DP values are hardcoded for my phone (360x511dp) because CenterVertically doesn't work correctly
-
             var login = layout.View(Login)
                 .Top(50.Dp())
                 .AutoSize()
                 .Width(200.Dp())
-                .Left(80.Dp());
+                .CenterHorizontally();
 
             var password = layout.View(Password)
                 .Below(login, 50.Dp())
                 .AutoSize()
-                .Width(200.Dp())
-                .Left(80.Dp());
+                .MinWidth(200.Dp())
+                .CenterHorizontally();
 
             var confirmPassword = layout.View(ConfirmPassword)
                 .Below(password, 5.Dp())
                 .AutoSize()
-                .Width(200.Dp())
-                .Left(80.Dp());
+                .MinWidth(200.Dp())
+                .CenterHorizontally();
 
             var signUp = layout.View(SignUp)
                 .Bottom(30.Dp())
                 .Height(60.Dp())
                 .Width(180.Dp())
-                .Left(90.Dp());
+                .CenterHorizontally();
 
 #if __ANDROID__
             var loginPlatformView = Login.AsView().PlatformView.JavaCast<EditText>();
