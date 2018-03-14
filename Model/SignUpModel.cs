@@ -1,15 +1,46 @@
-﻿
-using Qoden.Binding;
+﻿using Qoden.Binding;
 
 namespace SignUp
 {
     public class SignUpModel : DataContext
     {
-        public string Login { get; set; }
-        public string Password { get; set; }
-        public string ConfirmPassword { get; set; }
+        private string _login;
 
-        public Command SignUpCommand;
+        public string Login
+        {
+            get => _login;
+            set
+            {
+                _login = value;
+                SignUpCommand.RaiseCanExecuteChanged();
+            }
+        }
+
+        private string _password;
+
+        public string Password
+        {
+            get => _password;
+            set
+            {
+                _password = value;
+                SignUpCommand.RaiseCanExecuteChanged();
+            }
+        }
+
+        private string _confirmPassword;
+
+        public string ConfirmPassword
+        {
+            get => _confirmPassword;
+            set
+            {
+                _confirmPassword = value;
+                SignUpCommand.RaiseCanExecuteChanged();
+            }
+        }
+
+        public readonly Command SignUpCommand;
 
         public SignUpModel()
         {
@@ -18,10 +49,9 @@ namespace SignUp
                 Action = PerformSignUp,
                 CanExecute = FieldsAreValid
             };
-            SignUpCommand.RaiseCanExecuteChanged();
         }
 
-        public bool FieldsAreValid(object arg) =>
+        private bool FieldsAreValid(object arg) =>
             Login?.Length >= 3 && string.Equals(Password, ConfirmPassword);
 
         private void PerformSignUp(object obj)

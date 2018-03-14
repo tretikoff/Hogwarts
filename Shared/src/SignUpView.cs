@@ -1,10 +1,10 @@
 ﻿using Qoden.UI;
 using Qoden.UI.Wrappers;
 using Button = Qoden.UI.Wrappers.Button;
+
 #if __ANDROID__
 using Android.Content;
 using Android.Text;
-
 #endif
 
 namespace SignUp

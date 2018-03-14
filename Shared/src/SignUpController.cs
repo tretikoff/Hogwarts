@@ -13,35 +13,17 @@ namespace SignUp
 
             _model = this.GetViewModelStore().Get(() => new SignUpModel());
 
-//            var signUpCommandBinding = new CommandBinding
-//            {
-//                Command = _model.SignUpCommand,
-//                Trigger = View.SignUp.ClickTarget()
-//            };
-//
-//            void UpdateSourceAndCommand(IPropertyBinding binding, ChangeSource source)
-//            {
-//                binding.UpdateSource();
-//                signUpCommandBinding.UpdateTarget();
-//            }
-
-            //BUG: button state is not updated
             Bindings.Command(_model.SignUpCommand)
                 .To(View.SignUp.ClickTarget());
 
             Bindings.Property(_model, x => x.Login)
-                .To(View.Login.TextProperty())
-                .AfterTargetUpdate((binding, source) => binding.UpdateSource());
-
+                .To(View.Login.TextProperty());
 
             Bindings.Property(_model, x => x.Password)
-                .To(View.Password.TextProperty())
-                .AfterTargetUpdate((binding, source) => binding.UpdateSource());
+                .To(View.Password.TextProperty());
 
             Bindings.Property(_model, x => x.ConfirmPassword)
-                .To(View.ConfirmPassword.TextProperty())
-                .AfterTargetUpdate((binding, source) => binding.UpdateSource());
-
+                .To(View.ConfirmPassword.TextProperty());
         }
     }
 }
