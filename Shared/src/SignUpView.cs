@@ -71,11 +71,12 @@ namespace SignUp
                 .CenterHorizontally();
 
 
+            var signUpHeight = 60.Dp();
             var signUp = layout.View(SignUp)
-                .Height(60.Dp())
+                .Height(signUpHeight)
                 .Width(180.Dp())
                 .Top(confirmPassword.Bottom +
-                     (outerBounds.Bottom - confirmPassword.Bottom) * 0.95f - 60.Dp())
+                     (outerBounds.Bottom - confirmPassword.Bottom) * 0.95f - signUpHeight)
                 .CenterHorizontally();
         }
     }
