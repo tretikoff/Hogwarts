@@ -6,4 +6,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Lib\Qoden.UI\Binding\Qoden.Binding.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.5.166-beta" />
+  </ItemGroup>
 </Project>
