@@ -20,9 +20,12 @@ namespace SignUp
 
             _signUpController = new SignUpController();
 
-            SupportFragmentManager.BeginTransaction()
-                .Replace(Resource.Id.content_frame, _signUpController)
-                .Commit();
+            if (bundle == null)
+            {
+                SupportFragmentManager.BeginTransaction()
+                    .Add(Resource.Id.content_frame, _signUpController)
+                    .Commit();
+            }
         }
     }
 }
