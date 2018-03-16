@@ -51,12 +51,17 @@ namespace SignUp
             };
         }
 
-        private bool FieldsAreValid(object arg) =>
+        private bool FieldsAreValid(object arg) => 
             Login?.Length >= 3 && string.Equals(Password, ConfirmPassword);
 
-        private void PerformSignUp(object obj)
+        public void PerformSignUp(object obj)
         {
-            //TODO: show alert or something
+            var user = new User
+            {
+                UserName = Login,
+                Password = Password
+            };
+            SignUpContext.UserStorageService.CreateUser(user);
             System.Diagnostics.Debug.WriteLine("Signing Up !");
         }
     }

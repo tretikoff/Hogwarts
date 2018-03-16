@@ -1,4 +1,5 @@
-﻿using Qoden.UI;
+﻿using Qoden.Binding;
+using Qoden.UI;
 using Qoden.UI.Wrappers;
 using Button = Qoden.UI.Wrappers.Button;
 
@@ -15,6 +16,7 @@ namespace SignUp
         public TextField Login { get; }
         public TextField Password { get; }
         public TextField ConfirmPassword { get; }
+        public Label ErrorMessageLabel { get; }
 
 #if __IOS__
         public SignUpView()
@@ -34,6 +36,9 @@ namespace SignUp
 
             ConfirmPassword = Builder.TextField();
             ConfirmPassword.SetHint("Confirm Password");
+
+            ErrorMessageLabel = Builder.Label();
+            ErrorMessageLabel.SetTextColor(new RGB(255, 0, 0));
 
 #if __ANDROID__
             Login.PlatformView.InputType =
@@ -76,6 +81,12 @@ namespace SignUp
                 .Width(180.Dp())
                 .Top(confirmPassword.Bottom +
                      (outerBounds.Bottom - confirmPassword.Bottom) * 0.95f - 60.Dp())
+                .CenterHorizontally();
+
+            var errorMessage = layout.View(ErrorMessageLabel)
+                .Height(20.Dp())
+                .Width(180.Dp())
+                .Below(signUp, 10.Dp())
                 .CenterHorizontally();
         }
     }

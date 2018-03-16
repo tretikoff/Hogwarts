@@ -32,6 +32,11 @@ namespace SignUp
             }
         }
 
+        public bool UserExists(string username)
+        {
+            return FindUserByName(username) == null;
+        }
+
         public int DeleteUser(int id)
         {
             return _connection.Delete<User>(id);

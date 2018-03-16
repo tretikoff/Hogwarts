@@ -1,4 +1,5 @@
-﻿using Qoden.Binding;
+﻿using System.ComponentModel;
+using Qoden.Binding;
 using Qoden.UI;
 
 namespace SignUp
@@ -24,6 +25,27 @@ namespace SignUp
 
             Bindings.Property(_model, x => x.ConfirmPassword)
                 .To(View.ConfirmPassword.TextProperty());
+
+            Bindings.Command(
+                    new Command
+                    {
+                        Action = PerformSignUp
+                    })
+                .To(View.SignUp.ClickTarget());
+        }
+
+        void PerformSignUp(object obj)
+        {
+            if (SignUpContext.UserStorageService.UserExists(_model.Login))
+            {
+
+                View.ErrorMessageLabel.SetText("Current login is already in use");
+            }
+            else
+            {
+                _model.PerformSignUp(obj);
+                View.ErrorMessageLabel.SetText("");
+            }
         }
     }
 }
