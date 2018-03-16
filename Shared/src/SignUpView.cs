@@ -1,11 +1,13 @@
-﻿using Qoden.UI;
+﻿using Android.OS;
+using Qoden.UI;
 using Qoden.UI.Wrappers;
 using Button = Qoden.UI.Wrappers.Button;
-
 #if __ANDROID__
 using Android.Content;
 using Android.Text;
+
 #endif
+
 
 namespace SignUp
 {
@@ -16,6 +18,10 @@ namespace SignUp
         public TextField Password { get; }
         public TextField ConfirmPassword { get; }
 
+        public Label ConfirmPasswordInfo { get; }
+        public Label PasswordInfo { get; }
+        public Label LoginInfo { get; }
+
 #if __IOS__
         public SignUpView()
 #endif
@@ -23,9 +29,6 @@ namespace SignUp
         public SignUpView(Context context) : base(context)
 #endif
         {
-            SignUp = Builder.Button();
-            SignUp.SetText("Sign up");
-
             Login = Builder.TextField();
             Login.SetHint("Login");
 
@@ -34,6 +37,17 @@ namespace SignUp
 
             ConfirmPassword = Builder.TextField();
             ConfirmPassword.SetHint("Confirm Password");
+
+            SignUp = Builder.Button();
+            SignUp.SetText("Sign up");
+
+            LoginInfo = Builder.Label();
+            LoginInfo.SetText("Login must be at least 3 characters");
+
+            PasswordInfo = Builder.Label();
+            PasswordInfo.SetText("Password must be at least 6 characters");
+            ConfirmPasswordInfo = Builder.Label();
+
 
 #if __ANDROID__
             Login.PlatformView.InputType =
@@ -45,6 +59,25 @@ namespace SignUp
 
             ConfirmPassword.PlatformView.InputType =
                 InputTypes.TextVariationPassword | InputTypes.ClassText;
+
+            if (Build.VERSION.SdkInt < BuildVersionCodes.M)
+            {
+                LoginInfo.PlatformView.SetTextAppearance(Context, Resource.Style
+                    .TextAppearance_AppCompat_Caption);
+                PasswordInfo.PlatformView.SetTextAppearance(Context, Resource.Style
+                    .TextAppearance_AppCompat_Caption);
+                ConfirmPasswordInfo.PlatformView.SetTextAppearance(Context, Resource.Style
+                    .TextAppearance_AppCompat_Caption);
+            }
+            else
+            {
+                LoginInfo.PlatformView.SetTextAppearance(Resource.Style
+                    .TextAppearance_AppCompat_Caption);
+                PasswordInfo.PlatformView.SetTextAppearance(Resource.Style
+                    .TextAppearance_AppCompat_Caption);
+                ConfirmPasswordInfo.PlatformView.SetTextAppearance(Resource.Style
+                    .TextAppearance_AppCompat_Caption);
+            }
 #endif
         }
 
@@ -57,19 +90,33 @@ namespace SignUp
                 .AutoSize()
                 .Width(200.Dp())
                 .CenterHorizontally();
+            var loginInfo = layout.View(LoginInfo)
+                .Below(login)
+                .MaxWidth(login.Width)
+                .AutoSize()
+                .CenterHorizontally();
 
             var password = layout.View(Password)
                 .Below(login, outerBounds.Bottom * 0.1f)
                 .AutoSize()
                 .MinWidth(200.Dp())
                 .CenterHorizontally();
+            var passwordInfo = layout.View(PasswordInfo)
+                .Below(password)
+                .MaxWidth(password.Width)
+                .AutoSize()
+                .CenterHorizontally();
 
             var confirmPassword = layout.View(ConfirmPassword)
-                .Below(password, 5.Dp())
+                .Below(passwordInfo, 5.Dp())
                 .AutoSize()
                 .MinWidth(200.Dp())
                 .CenterHorizontally();
-
+            var confirmPasswordInfo = layout.View(ConfirmPasswordInfo)
+                .Below(confirmPassword)
+                .MaxWidth(confirmPassword.Width)
+                .AutoSize()
+                .CenterHorizontally();
 
             var signUpHeight = 60.Dp();
             var signUp = layout.View(SignUp)

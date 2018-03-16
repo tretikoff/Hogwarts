@@ -44,7 +44,7 @@ namespace SignUp
 
         public SignUpModel()
         {
-            SignUpCommand = new Command()
+            SignUpCommand = new Command
             {
                 Action = PerformSignUp,
                 CanExecute = FieldsAreValid
@@ -52,7 +52,7 @@ namespace SignUp
         }
 
         private bool FieldsAreValid(object arg) =>
-            Login?.Length >= 3 && string.Equals(Password, ConfirmPassword);
+            Login?.Length >= 3 && string.Equals(Password, ConfirmPassword) && Password?.Length >= 6;
 
         private void PerformSignUp(object obj)
         {
